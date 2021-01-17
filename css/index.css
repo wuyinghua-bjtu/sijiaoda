@@ -1,0 +1,326 @@
+/* 设置字体 */
+
+body {
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 设置中间内容宽度样式--水平居中 */
+.w{
+    width: 1220px;
+    margin:0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* 设置顶部导航栏容器样式 */
+
+.navi-bar-wrapper {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333333;
+}
+
+
+/* 设置顶部导航栏内部样式 */
+
+.navi-bar {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+
+/* 设置导航栏字体样式 */
+
+.navi-bar a {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+
+/* 设置超链接鼠标移入样式 */
+
+.navi-bar a:hover {
+    color: white;
+}
+
+
+/* 设置位置图标颜色 */
+
+.navi-bar .position .current-city i {
+    color: rgb(202, 28, 28);
+}
+
+
+/* 设置浮动样式 */
+
+.position {
+    float: left;
+    margin-right: 50px;
+}
+
+.service li {
+    float: left;
+}
+
+.user-info {
+    float: right;
+}
+
+.user-info li {
+    float: left;
+}
+
+
+/* 设置分割线两边宽度和样式 */
+
+.user-info .line,
+.service .line {
+    margin: 0 10px;
+    color: #424242;
+}
+
+/* 设置app下拉二维码 */
+.appwrapper {
+    position: relative;
+    z-index: 999;
+}
+
+.app .qrcode {
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    line-height: 1px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    /* transition: 用于为样式设置过渡效果 */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.app .qrcode img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+
+/* 设置二维码下方文字 */
+
+.app .qrcode span {
+    font-size: 14px;
+    color: black;
+}
+
+.app:hover .qrcode {
+    display: block;
+    height: 140px;
+}
+
+/* 城市列表样式 */
+.city-list {
+    display: none;
+    width: 250px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+}
+
+.city-list table {
+    margin: 0px 20px;
+    margin-bottom: 30px;
+}
+
+.city-list table a {
+    font-size: 14px;
+    color: #424242;
+    margin-right: 20px;
+}
+
+.city-list table a:hover {
+    color: red;
+}
+
+.position:hover .city-list {
+    display: block;
+}
+
+/* 设置城市列表下方字体 */
+.position span{
+    font-size: 14px;
+    color:red;
+}
+
+/* 设置小程序下拉码 */
+.mini-program-wrapper {
+    position: relative;
+    z-index: 999;
+}
+
+.mini-program .mini-program-code {
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    line-height: 1px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    /* transition: 用于为样式设置过渡效果 */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.mini-program .mini-program-code img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+
+/* 设置小程序码下方文字 */
+.mini-program .mini-program-code span {
+    font-size: 14px;
+    color: black;
+}
+
+.mini-program:hover .mini-program-code {
+    display: block;
+    height: 140px;
+}
+
+/* 设置头部导航容器宽高  灰色下边框 */
+.header-navi-wrapper{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #b0b0b0;
+    position: relative;
+}
+/* 文字水平居中 */
+.header-navi{
+    line-height: 100px;
+}
+
+/* 设置logo大小和外边距 */
+.logoimg img{
+    width: 70px;
+    margin:15px;
+}
+
+/* 设置logo外边框宽度 */
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+/* 设置用户功能区 */
+.user-service {
+    float: left;
+}
+
+/* 设置用户功能字体 */
+.user-service li{
+    float: left;
+    margin-right: 0px;
+    font-size: 18px;
+    
+}
+
+.user-service li a{
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+.user-service li a:hover{
+    color:salmon;
+    background-color: #424242;
+}
+/* 设置用户功能和logo的距离  */
+.user-service li:first-child{
+    margin-left: 120px;
+}
+
+/* 设置用户功能下拉框---用于描述功能具体内容以及选择分支功能 */
+.header-navi-wrapper .user-service-demo{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.user-service li:hover ~ .user-service-demo,
+.user-service-demo:hover{
+    height: 340px;
+    border-top:1px solid #b0b0b0;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .1);
+}
+
+/* 设置搜索区域 */
+.search-bar-wrapper{
+    float: right;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.search-bar-wrapper .search-input,
+.search-bar-wrapper .search-button{
+    float: left;
+}
+
+/* 设置搜索按钮 */
+.search-button{
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+    border-left: none;
+
+    background-color: #fff;
+}
+
+/* 设置输入框 */
+.search-input{
+    width: 198px;
+    height: 46px;
+    border:1px solid black;
+    border-right: none;
+    padding: 1px  10px;
+    font-size: 16px;
+    outline:none;
+}
+
+/* 设置移入搜索按钮状态变化 */
+.search-button:hover{
+    background-color:salmon;
+}
+
+.search-input:focus{
+    border-color: salmon;
+}
+.search-input:focus + .search-button{
+    border-color: salmon;
+    color: salmon;
+}

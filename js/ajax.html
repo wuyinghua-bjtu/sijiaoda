@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ajax-test{
+            width: 100px;
+            height: 80px;
+            border: 1px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    <button>ajax</button>
+    <div id="ajax-test"></div>
+
+    <script>
+        const btn = document.getElementsByTagName('button')[0];
+        const result = document.getElementById("ajax-test");
+
+        btn,onclick = function() {
+            // 创建对象
+            const xhr = new XMLHttpRequest();
+            // 初始化 设置请求方法和url
+            xhr.open('POST', 'HTTP://127.0.0.1:8000/server');
+            xhr.send();
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4){
+                    if(xhr.status >= 200 && xhr.status < 300) {
+                        result.innerHTML = xhr.response;
+                    }else {
+
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
