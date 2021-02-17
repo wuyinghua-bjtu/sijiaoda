@@ -1,0 +1,116 @@
+/* 设置头部导航容器宽高  灰色下边框 */
+.header-navi-wrapper{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #b0b0b0;
+    position: relative;
+}
+/* 文字水平居中 */
+.header-navi{
+    line-height: 100px;
+}
+
+/* 设置logo大小和外边距 */
+.logoimg img{
+    width: 70px;
+    margin:15px;
+}
+
+/* 设置logo外边框宽度 */
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+/* 设置用户功能区 */
+.user-service {
+    float: left;
+}
+
+/* 设置用户功能字体 */
+.user-service li{
+    float: left;
+    margin-right: 0px;
+    font-size: 18px;
+
+}
+
+.user-service li a{
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+.user-service li a:hover{
+    color:salmon;
+    background-color: #424242;
+}
+/* 设置用户功能和logo的距离  */
+.user-service li:first-child{
+    margin-left: 120px;
+}
+
+/* 设置用户功能下拉框---用于描述功能具体内容以及选择分支功能 */
+.header-navi-wrapper .user-service-demo{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.user-service li:hover ~ .user-service-demo,
+.user-service-demo:hover{
+    height: 340px;
+    border-top:1px solid #b0b0b0;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .1);
+}
+
+/* 设置搜索区域 */
+.search-bar-wrapper{
+    float: right;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.search-bar-wrapper .search-input,
+.search-bar-wrapper .search-button{
+    float: left;
+}
+
+/* 设置搜索按钮 */
+.search-button{
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+    border-left: none;
+
+    background-color: #fff;
+}
+
+/* 设置输入框 */
+.search-input{
+    width: 198px;
+    height: 46px;
+    border:1px solid black;
+    border-right: none;
+    padding: 1px  10px;
+    font-size: 16px;
+    outline:none;
+}
+
+/* 设置移入搜索按钮状态变化 */
+.search-button:hover{
+    background-color:salmon;
+}
+
+.search-input:focus{
+    border-color: salmon;
+}
+.search-input:focus + .search-button{
+    border-color: salmon;
+    color: salmon;
+}

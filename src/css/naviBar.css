@@ -1,0 +1,183 @@
+/* 设置顶部导航栏容器样式 */
+
+.navi-bar-wrapper {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333333;
+}
+
+
+/* 设置顶部导航栏内部样式 */
+
+.navi-bar {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+
+/* 设置导航栏字体样式 */
+
+.navi-bar a {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+
+/* 设置超链接鼠标移入样式 */
+
+.navi-bar a:hover {
+    color: white;
+}
+
+
+/* 设置位置图标颜色 */
+
+.navi-bar .position .current-city i {
+    color: rgb(202, 28, 28);
+}
+
+
+/* 设置浮动样式 */
+
+.position {
+    float: left;
+    margin-right: 50px;
+}
+
+.service li {
+    float: left;
+}
+
+.user-info {
+    float: right;
+}
+
+.user-info li {
+    float: left;
+}
+
+
+/* 设置分割线两边宽度和样式 */
+
+.user-info .line,
+.service .line {
+    margin: 0 10px;
+    color: #424242;
+}
+
+/* 设置app下拉二维码 */
+.appwrapper {
+    position: relative;
+    z-index: 999;
+}
+
+.app .qrcode {
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    line-height: 1px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    /* transition: 用于为样式设置过渡效果 */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.app .qrcode img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+
+/* 设置二维码下方文字 */
+
+.app .qrcode span {
+    font-size: 14px;
+    color: black;
+}
+
+.app:hover .qrcode {
+    display: block;
+    height: 140px;
+}
+
+/* 城市列表样式 */
+.city-list {
+    display: none;
+    width: 250px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+}
+
+.city-list table {
+    margin: 0px 20px;
+    margin-bottom: 30px;
+}
+
+.city-list table a {
+    font-size: 14px;
+    color: #424242;
+    margin-right: 20px;
+}
+
+.city-list table a:hover {
+    color: red;
+}
+
+.position:hover .city-list {
+    display: block;
+}
+
+/* 设置城市列表下方字体 */
+.position span{
+    font-size: 14px;
+    color:red;
+}
+
+/* 设置小程序下拉码 */
+.mini-program-wrapper {
+    position: relative;
+    z-index: 999;
+}
+
+.mini-program .mini-program-code {
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    line-height: 1px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    /* transition: 用于为样式设置过渡效果 */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.mini-program .mini-program-code img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+
+/* 设置小程序码下方文字 */
+.mini-program .mini-program-code span {
+    font-size: 14px;
+    color: black;
+}
+
+.mini-program:hover .mini-program-code {
+    display: block;
+    height: 140px;
+}

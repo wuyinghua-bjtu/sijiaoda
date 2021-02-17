@@ -1,0 +1,24 @@
+/* 设置字体 */
+
+body {
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 设置中间内容宽度样式--水平居中 */
+.w{
+    width: 1220px;
+    margin:0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
